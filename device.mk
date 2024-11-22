@@ -33,6 +33,10 @@ include vendor/xiaomi/camera/miuicamera.mk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/st_license.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/st_license.lic
 
+# Disable Game FPS limit
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.graphics.game_default_frame_rate.enabled=0
+
 # Logging
 SPAMMY_LOG_TAGS := \
     MiStcImpl \
