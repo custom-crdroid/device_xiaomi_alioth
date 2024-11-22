@@ -18,11 +18,17 @@ TARGET_INCLUDES_MIUI_CAMERA := true
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
+PRODUCT_SYSTEM_PROPERTIES += \
+     ro.crdroid.maintainer=∂α૨ҡ_ρɦσεɳเ
+
 PRODUCT_NAME := lineage_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO F3
+
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_WIFI_EXT := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
