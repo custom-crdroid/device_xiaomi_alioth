@@ -7,6 +7,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AudioFX \
     Eleven \
+    Twelve \
     Etar \
     ExactCalculator \
     Jelly \
@@ -18,10 +19,12 @@ LOCAL_OVERRIDES_PACKAGES := \
     Chrome-Stub \
     Drive \
     DeskClock \
+    stk \
+    Stk \
     GoogleCamera \
     Glimpse \
     Gallery2 \
-    Maps \
+    FilesPrebuilt \
     MiuiScanner \
     Matlog \
     MatLog \
@@ -41,8 +44,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     OemDmTrigger \
     OPScreenRecord \
     Ornament \
-    Photos \
-    PrebuiltGmail \
     SafetyHubPrebuilt \
     ScribePrebuilt \
     Showcase \
