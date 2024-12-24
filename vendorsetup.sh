@@ -2,24 +2,9 @@
 
 base64 -d device/xiaomi/alioth/configs/camera/secret > device/xiaomi/alioth/configs/camera/st_license.lic
 
-# Clone kernel && setup kernelsu submodule
-#git clone https://github.com/EmanuelCN/kernel_xiaomi_sm8250.git -b staging kernel/xiaomi/sm8250;
-#cd kernel/xiaomi/sm8250;
-#git submodule init;
-#git submodule update;
-#cd ../../../;
+git clone https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r536225 prebuilts/clang/host/linux-x86/clang-r536225
 
-# Setup clang and antman
-#mkdir -p prebuilts/clang/host/linux-x86/clang-neutron
-#cd prebuilts/clang/host/linux-x86/clang-neutron
-#curl -LO "https://raw.githubusercontent.com/Neutron-Toolchains/antman/main/antman"
-#chmod +x antman
-#./antman -S
+rm -rf packages/resources/devicesettings 
+git clone https://github.com/custom-crdroid/packages_resources_devicesettings.git packages/resources/devicesettings 
 
-
-# Check if the system is not Arch Linux before running the patch command
-#if ! grep -q "Arch" /etc/os-release; then
-#  ./antman --patch=glibc
-#fi
-
-#cd ../../../../../
+git clone https://gitlab.com/dark.phnx12/vendor_xiaomi_camera.git vendor/xiaomi/camera
