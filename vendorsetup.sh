@@ -8,3 +8,9 @@ rm -rf packages/resources/devicesettings
 git clone https://github.com/custom-crdroid/packages_resources_devicesettings.git packages/resources/devicesettings 
 
 git clone https://gitlab.com/dark.phnx12/vendor_xiaomi_camera.git vendor/xiaomi/camera
+
+#Init Kernel Su
+cd kernel/xiaomi/sm8250
+git submodule init
+git submodule update
+cd ../../../
