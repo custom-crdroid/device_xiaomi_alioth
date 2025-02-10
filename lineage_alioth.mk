@@ -15,9 +15,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_USES_MIUI_CAMERA := true
 TARGET_INCLUDES_MIUI_CAMERA := true
 
-PRODUCT_SYSTEM_PROPERTIES += \
-     ro.crdroid.maintainer=∂αяк_ρнσєηιχ
-
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
@@ -31,13 +28,16 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 BUILD_FINGERPRINT := POCO/alioth_global/alioth:13/TKQ1.221114.001/V816.0.2.0.TKHMIXM:user/release-keys
 
-TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_BOOT_ANIMATION_RES := 1080
 
 WITH_GMS := true
+
+MATRIXX_BUILD_TYPE := Official
 
 # Pixel stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_STOCK_ARCORE := true
+#TARGET_INCLUDE_NEXUS := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_SUPPORTS_QUICK_TAP := true

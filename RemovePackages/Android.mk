@@ -31,7 +31,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     MyVerizonServices \
     OBDM_Permissions \
     GoogleTTS \
-    arcore \
     Videos \
     MaestroPrebuilt \
     talkback \
