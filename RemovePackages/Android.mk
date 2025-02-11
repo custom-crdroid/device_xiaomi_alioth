@@ -19,12 +19,9 @@ LOCAL_OVERRIDES_PACKAGES := \
     Chrome-Stub \
     Drive \
     DeskClock \
-    stk \
-    Stk \
     GoogleCamera \
     Glimpse \
     Gallery2 \
-    FilesPrebuilt \
     MiuiScanner \
     Matlog \
     MatLog \
